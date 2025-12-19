@@ -1,0 +1,64 @@
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    background: var(--black-color);
+}
+
+.container-principal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    gap: 50px;
+    padding: 15px;
+}
+
+.title-principal {
+    color: var(--white-color);
+    font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.input-busqueda {
+    width: 600px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+}
+
+.input-busqueda:focus {
+    outline: none;
+    background: var(--white-color);
+    font-weight: 600;
+}
+
+.carrito-container {
+    color: var(--white-color);
+    padding: 15px;
+    cursor: pointer;
+}
+
+/* NAV */
+
+.nav-bar {
+    padding: 20px;
+}
+
+.ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    list-style: none;
+    gap: 50px;
+    cursor: pointer;
+}
+
+ul>li {
+    transition: transform .2s ease-in-out;
+}
+
+ul>li:hover {
+    transform: scale(1.2);
+}

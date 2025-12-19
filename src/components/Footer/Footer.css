@@ -1,0 +1,34 @@
+.footer {
+    text-align: center;
+    padding: 25px 0 12px;
+    background: var(--black-color);
+    color: var(--white-color);
+}
+
+.title-footer {
+    font-size: clamp(1rem, 1.6vw, 1.3rem);
+    font-weight: 500;
+    padding: 7px;
+}
+
+.iconos-container {
+    display: flex;
+    gap: 20px;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 0 30px;
+}
+
+.icono {
+    font-size: 27px;
+    cursor: pointer;
+}
+
+.icono-gmail {
+    cursor: pointer;
+}
+
+.parrafo {
+    font-size: clamp(0.95rem, 1.2vw, 1.1rem);
+}
