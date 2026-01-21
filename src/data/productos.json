@@ -1,0 +1,322 @@
+[
+    {
+        "id": 1,
+        "categoria": "gabinete",
+        "nombre": "Gabinete ASUS TUF GT501",
+        "descripcion": "4x120mm RGB Fans Aura Sync",
+        "precio": 243800,
+        "img": "/productos/gabinete1.jpg"
+    },
+    {
+        "id": 2,
+        "categoria": "gabinete",
+        "nombre": "Gabinete ASUS TUF GT301",
+        "descripcion": "4x120mm ARGB Fans",
+        "precio": 144550,
+        "img": "/productos/gabinete2.jpg"
+    },
+    {
+        "id": 3,
+        "categoria": "gabinete",
+        "nombre": "Gabinete Corsair 6500D Airflow TG",
+        "descripcion": "Alto flujo de aire",
+        "precio": 278000,
+        "img": "/productos/gabinete3.jpg"
+    },
+    {
+        "id": 4,
+        "categoria": "gabinete",
+        "nombre": "Gabinete HYTE Y70 TOUCH INFINITE Black",
+        "descripcion": "Pantalla táctil 2.5K IPS + Riser PCIe 4.0",
+        "precio": 639250,
+        "img": "/productos/gabinete4.jpg"
+    },
+    {
+        "id": 5,
+        "categoria": "gabinete",
+        "nombre": "Gabinete HYTE Y70 TOUCH INFINITE Snow White",
+        "descripcion": "Pantalla táctil 2.5K IPS + Riser PCIe 4.0",
+        "precio": 639250,
+        "img": "/productos/gabinete5.jpg"
+    },
+    {
+        "id": 6,
+        "categoria": "gabinete",
+        "nombre": "Gabinete HYTE Y70 TOUCH INFINITE Panda",
+        "descripcion": "Pantalla táctil 2.5K IPS + Riser PCIe 4.0",
+        "precio": 620900,
+        "img": "/productos/gabinete6.jpg"
+    },
+    {
+        "id": 7,
+        "categoria": "monitor",
+        "nombre": "Monitor Acer Nitro 34\"",
+        "descripcion": "QHD VA 200Hz 1ms FreeSync",
+        "precio": 726100,
+        "img": "/productos/monitor1.jpg"
+    },
+    {
+        "id": 8,
+        "categoria": "monitor",
+        "nombre": "Monitor Samsung Odyssey 27\"",
+        "descripcion": "QHD VA 240Hz Curvo 1000R",
+        "precio": 724600,
+        "img": "/productos/monitor2.jpg"
+    },
+    {
+        "id": 9,
+        "categoria": "monitor",
+        "nombre": "Monitor ViewSonic 34\"",
+        "descripcion": "QHD VA 180Hz Curvo 1500R",
+        "precio": 630750,
+        "img": "/productos/monitor3.jpg"
+    },
+    {
+        "id": 10,
+        "categoria": "monitor",
+        "nombre": "Monitor ViewSonic VX3418-2KPC 34\"",
+        "descripcion": "QHD VA 180Hz Curvo 1500R",
+        "precio": 630750,
+        "img": "/productos/monitor4.jpg"
+    },
+    {
+        "id": 11,
+        "categoria": "monitor",
+        "nombre": "Monitor AsRock Phantom 27\"",
+        "descripcion": "QHD IPS 180Hz Base regulable",
+        "precio": 445100,
+        "img": "/productos/monitor5.jpg"
+    },
+    {
+        "id": 12,
+        "categoria": "monitor",
+        "nombre": "Monitor Acer Predator 24.5\"",
+        "descripcion": "FHD IPS 300Hz FreeSync",
+        "precio": 410200,
+        "img": "/productos/monitor6.jpg"
+    },
+    {
+        "id": 13,
+        "categoria": "mouse",
+        "nombre": "Mouse Corsair Nightsabre SlipStream Wireless",
+        "descripcion": "RGB 26K DPI 100Hs",
+        "precio": 180350,
+        "img": "/productos/mouse1.jpg"
+    },
+    {
+        "id": 14,
+        "categoria": "mouse",
+        "nombre": "Mouse Redragon Griffin M607 RGB",
+        "descripcion": "Mouse gamer RGB",
+        "precio": 19950,
+        "img": "/productos/mouse2.jpg"
+    },
+    {
+        "id": 15,
+        "categoria": "notebook",
+        "nombre": "Notebook Acer Aspire Go 15",
+        "descripcion": "i5 1334U 8GB DDR5 SSD 256GB Win11",
+        "precio": 943400,
+        "img": "/productos/notebook1.jpg"
+    },
+    {
+        "id": 16,
+        "categoria": "notebook",
+        "nombre": "Notebook Lenovo ThinkBook 16 G6",
+        "descripcion": "Ryzen 5 7430U 8GB SSD 512GB",
+        "precio": 1149300,
+        "img": "/productos/notebook2.jpg"
+    },
+    {
+        "id": 17,
+        "categoria": "notebook",
+        "nombre": "Notebook Acer Aspire 3 Touch",
+        "descripcion": "Ryzen 5 7520U 8GB DDR5 SSD 512GB",
+        "precio": 915250,
+        "img": "/productos/notebook3.jpg"
+    },
+    {
+        "id": 18,
+        "categoria": "notebook",
+        "nombre": "Notebook Gamer Acer Nitro 5",
+        "descripcion": "i7-12650H RTX 4060 165Hz",
+        "precio": 2613400,
+        "img": "/productos/notebook4.jpg"
+    },
+    {
+        "id": 19,
+        "categoria": "notebook",
+        "nombre": "Notebook Gamer MSI Cyborg A13VE",
+        "descripcion": "i7 13620H RTX 4050 144Hz",
+        "precio": 2827950,
+        "img": "/productos/notebook5.jpg"
+    },
+    {
+        "id": 20,
+        "categoria": "notebook",
+        "nombre": "Notebook ASUS ROG Strix SCAR 18",
+        "descripcion": "Ultra 9 RTX 5080 240Hz",
+        "precio": 8335000,
+        "img": "/productos/notebook6.jpg"
+    },
+    {
+        "id": 21,
+        "categoria": "placa_video",
+        "nombre": "Gigabyte GeForce RTX 5080 AERO OC",
+        "descripcion": "16GB GDDR7",
+        "precio": 2689030,
+        "img": "/productos/placaVideo1.jpg"
+    },
+    {
+        "id": 22,
+        "categoria": "placa_video",
+        "nombre": "ASUS PRIME GeForce RTX 5080 OC",
+        "descripcion": "16GB GDDR7",
+        "precio": 2681080,
+        "img": "/productos/placaVideo2.jpg"
+    },
+    {
+        "id": 23,
+        "categoria": "placa_video",
+        "nombre": "Zotac GeForce RTX 5080 SOLID CORE OC",
+        "descripcion": "16GB GDDR7",
+        "precio": 2299990,
+        "img": "/productos/placaVideo3.jpg"
+    },
+    {
+        "id": 24,
+        "categoria": "placa_video",
+        "nombre": "Zotac GeForce RTX 5070 Ti SOLID SFF OC",
+        "descripcion": "16GB GDDR7",
+        "precio": 1799900,
+        "img": "/productos/placaVideo4.jpg"
+    },
+    {
+        "id": 25,
+        "categoria": "placa_video",
+        "nombre": "Zotac GeForce RTX 3050 Twin Edge OC",
+        "descripcion": "6GB GDDR6",
+        "precio": 330200,
+        "img": "/productos/placaVideo5.jpg"
+    },
+    {
+        "id": 26,
+        "categoria": "procesador",
+        "nombre": "Intel Core i9 14900K",
+        "descripcion": "Socket 1700 6.0GHz Turbo",
+        "precio": 836950,
+        "img": "/productos/procesador1.jpg"
+    },
+    {
+        "id": 27,
+        "categoria": "procesador",
+        "nombre": "Intel Pentium G4560",
+        "descripcion": "LGA1151 Kaby Lake",
+        "precio": 32700,
+        "img": "/productos/procesador2.jpg"
+    },
+    {
+        "id": 28,
+        "categoria": "procesador",
+        "nombre": "AMD Ryzen 3 4100",
+        "descripcion": "AM4 + Wraith Stealth",
+        "precio": 100450,
+        "img": "/productos/procesador3.jpg"
+    },
+    {
+        "id": 29,
+        "categoria": "procesador",
+        "nombre": "AMD Ryzen 5 5600XT",
+        "descripcion": "AM4 4.6GHz Turbo",
+        "precio": 269150,
+        "img": "/productos/procesador4.jpg"
+    },
+    {
+        "id": 30,
+        "categoria": "procesador",
+        "nombre": "AMD Ryzen 9 9950X3D",
+        "descripcion": "AM5 5.7GHz Turbo",
+        "precio": 1252900,
+        "img": "/productos/procesador5.jpg"
+    },
+    {
+        "id": 31,
+        "categoria": "procesador",
+        "nombre": "Intel Core i5 14600KF",
+        "descripcion": "Socket 1700 5.3GHz Turbo",
+        "precio": 404850,
+        "img": "/productos/procesador6.jpg"
+    },
+    {
+        "id": 32,
+        "categoria": "ram",
+        "nombre": "Kingston Fury Beast DDR5 64GB",
+        "descripcion": "6000MHz RGB CL30",
+        "precio": 1256050,
+        "img": "/productos/ram1.jpg"
+    },
+    {
+        "id": 33,
+        "categoria": "ram",
+        "nombre": "G.Skill Ripjaws V DDR4 16GB",
+        "descripcion": "3200MHz CL16",
+        "precio": 224900,
+        "img": "/productos/ram2.jpg"
+    },
+    {
+        "id": 34,
+        "categoria": "ram",
+        "nombre": "Corsair Vengeance LPX DDR5 16GB",
+        "descripcion": "5200MHz CL40",
+        "precio": 380830,
+        "img": "/productos/ram3.jpg"
+    },
+    {
+        "id": 35,
+        "categoria": "ram",
+        "nombre": "Team Vulcan DDR4 16GB ASUS TUF",
+        "descripcion": "3200MHz CL16",
+        "precio": 221900,
+        "img": "/productos/ram4.jpg"
+    },
+    {
+        "id": 36,
+        "categoria": "ram",
+        "nombre": "Team T-Force Vulcan Z DDR4 16GB",
+        "descripcion": "3200MHz CL16",
+        "precio": 221900,
+        "img": "/productos/ram5.jpg"
+    },
+    {
+        "id": 37,
+        "categoria": "ram",
+        "nombre": "Patriot Viper Venom DDR5 16GB",
+        "descripcion": "5200MHz CL36",
+        "precio": 409450,
+        "img": "/productos/ram6.jpg"
+    },
+    {
+        "id": 38,
+        "categoria": "teclado",
+        "nombre": "Teclado Corsair K65 PLUS Wireless",
+        "descripcion": "75% RGB Switch Red",
+        "precio": 225600,
+        "img": "/productos/teclado1.jpg"
+    },
+    {
+        "id": 39,
+        "categoria": "teclado",
+        "nombre": "Teclado Redragon Kumara K552",
+        "descripcion": "Outemu Red RGB",
+        "precio": 55150,
+        "img": "/productos/teclado2.jpg"
+    },
+    {
+        "id": 40,
+        "categoria": "combo",
+        "nombre": "Redragon Teclado K552 + Mouse M601 + Auris H101 + Mouse Pad",
+        "descripcion": "Outemu Red RGB",
+        "precio": 105900,
+        "img": "/productos/combo.jpg"
+    }
+]

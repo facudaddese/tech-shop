@@ -1,0 +1,17 @@
+.form-container {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+
+}
+
+form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    flex-direction: column;
+    height: 50vh;
+}

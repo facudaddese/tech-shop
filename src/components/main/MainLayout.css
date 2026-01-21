@@ -1,0 +1,85 @@
+.layout-container {
+    padding: 40px;
+}
+
+.layout-title {
+    font-weight: 500;
+    padding: 15px 10px 10px;
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
+}
+
+.grid-container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 30px;
+    padding: 10px;
+}
+
+.flex-container {
+    width: 100%;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 5px;
+    gap: 15px;
+    box-shadow: 2px 10px 5px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.flex-container:hover {
+    box-shadow: 2px 10px 5px 0px rgba(0, 0, 0, 0.4);
+}
+
+.description-container {
+    display: flex;
+    gap: 20px;
+}
+
+.description-container>img {
+    width: 40%;
+    padding: 10px;
+    transition: transform .5s ease-in-out;
+}
+
+.description-container>img:hover {
+    transform: scale(1.5);
+}
+
+.flex-item {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+}
+
+.flex-item>h2 {
+    font-weight: 500;
+    font-size: clamp(1rem, 1.2vw, 1.1rem);
+}
+
+.flex-item>strong {
+    font-size: clamp(.8rem, 1vw, .99rem);
+    width: 100%;
+    text-align: start;
+}
+
+.btn-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+}
+
+.btn-container>button {
+    border-radius: 15px;
+    padding: 7px;
+    background: #fff;
+    border: 1px solid var(--black-color);
+}
+
+.btn-container>button:hover {
+    cursor: pointer;
+    background: var(--black-color);
+    color: var(--white-color);
+}
