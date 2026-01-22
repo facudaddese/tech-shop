@@ -23,11 +23,5 @@ main {
 .grid-principal {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    height: 100dvh;
-}
-
-.main-content {
-    min-height: 0;
-    display: flex;
-    flex-direction: column;
+    height: 100vh;
 }

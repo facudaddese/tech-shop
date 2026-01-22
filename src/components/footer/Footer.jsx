@@ -4,13 +4,13 @@ import gmailLogo from '../../assets/logo-gmail.png';
 const Footer = () => {
     return (
         <footer className='footer'>
-            <h3 className='title-footer'>Contacto del desarrollador</h3>
+            <h2 className='title-footer'>Contacto del desarrollador</h2>
             <div className="iconos-container">
-                <img src={gmailLogo} alt="Logo de Gmail" className='icono-gmail' />
-                <i className="devicon-github-original icono"></i>
-                <i className="devicon-linkedin-plain icono"></i>
+                <a href="https://github.com/facudaddese?tab=repositories" target="_blank" rel="noopener noreferrer" className='ancor'><i className="devicon-github-original icono"></i></a>
+                <a href="https://www.linkedin.com/in/facundodaddese/" target="_blank" rel="noopener noreferrer" className='ancor'><i className="devicon-linkedin-plain icono"></i></a>
+                <a href="mailto:facundo.daddese19@gmail.com"><img src={gmailLogo} alt="Logo de Gmail" className='icono-gmail' /></a>
             </div>
-            <p className='parrafo'>e-commerce desarrollado por Facundo D'Addese | 2026.</p>
+            <p className='parrafo'>&copy; Facundo D'Addese | 2026.</p>
         </footer>
     )
 }
