@@ -16,7 +16,7 @@ const Notebooks = () => {
                                 <div className="description-container">
                                     <img className='img-producto' src={notebook.img} alt={notebook.nombre} />
                                     <div className="flex-item">
-                                        <h2>{notebook.nombre}</h2>
+                                        <h3 className='title-flex-item'>{notebook.nombre}</h3>
                                         <strong>${notebook.precio}</strong>
                                     </div>
                                 </div>

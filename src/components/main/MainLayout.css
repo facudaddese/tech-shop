@@ -52,7 +52,7 @@
     align-items: center;
 }
 
-.flex-item>h2 {
+.title-flex-item {
     font-weight: 500;
     font-size: clamp(1rem, 1.2vw, 1.1rem);
 }
@@ -82,4 +82,25 @@
     cursor: pointer;
     background: var(--black-color);
     color: var(--white-color);
+}
+
+/* MEDIA QUERIES */
+
+@media (max-width: 1024px) {
+
+    .grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    }
+}
+
+@media (max-width:768px) {
+
+    .layout-title {
+        text-align: center;
+        padding-bottom: 25px;
+    }
+
+    .description-container>img:hover {
+        transform: scale(1.2);
+    }
 }

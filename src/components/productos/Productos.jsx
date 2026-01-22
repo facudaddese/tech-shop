@@ -17,7 +17,7 @@ const Productos = () => {
                                 <div className="description-container">
                                     <img src={producto.img} alt={producto.nombre} />
                                     <div className="flex-item">
-                                        <h2>{producto.nombre}</h2>
+                                        <h3 className='title-flex-item'>{producto.nombre}</h3>
                                         <strong>${producto.precio}</strong>
                                     </div>
                                 </div>

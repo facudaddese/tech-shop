@@ -7,9 +7,9 @@ const MainLayout = () => {
 
     return (
         <main>
-            <Novedades />
-            <Destacados />
-            <Categorias />
+            <Novedades titulo={"Conocé nuestras últimas novedades"} />
+            <Destacados titulo={"Conocé nuestros productos destacados"} />
+            <Categorias titulo={"Explorá nuestras categoría"} />
         </main>
     )
 }

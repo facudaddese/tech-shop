@@ -10,12 +10,10 @@ const NavBar = ({ titulo }) => {
     return (
         <>
             <header className='header'>
-                <div className='container-principal'>
-                    <h1 className='title-principal'><Link className='link-title' to={"/"}>{titulo}</Link></h1>
-                    <input type="text" placeholder='Buscar productos' className='input-busqueda' />
-                </div>
+                <h1 className='title-principal'><Link className='link-title' to={"/"}>{titulo}</Link></h1>
                 <div className='carrito-container'>
-                    <span className="material-symbols-outlined carrito">shopping_cart</span>
+                    <input type="text" placeholder='Buscar productos' className='input-busqueda' />
+                    <span className="material-symbols-outlined">shopping_cart</span>
                     <strong>0</strong>
                 </div>
             </header>
