@@ -10,7 +10,7 @@ const App = () => {
 
   return (
     <div className='grid-principal'>
-      <NavBar titulo="TechShop" />
+      <NavBar titulo={"TechShop"} />
 
       <Routes>
         <Route path="/" element={<MainLayout />} />

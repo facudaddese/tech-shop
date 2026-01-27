@@ -1,4 +1,5 @@
 import { useFetch } from '../../hooks/useFetch'
+import ItemsProductos from '../ItemsProductos/ItemsProductos';
 
 const Notebooks = () => {
 
@@ -9,21 +10,10 @@ const Notebooks = () => {
             <div className="productos-container">
                 {
                     productos
-                        .filter(el => el.categoria === "notebook")
-                        .sort((a, b) => a.precio - b.precio)
+                        .filter(el => el.categoria === "notebook") //filtramos los producto solo que sean notebooks
+                        .sort((a, b) => a.precio - b.precio) //ordenamos las notebooks por precio, de menor a mayor
                         .map((notebook) => (
-                            <div key={notebook.id} className='flex-container'>
-                                <div className="description-container">
-                                    <img className='img-producto' src={notebook.img} alt={notebook.nombre} />
-                                    <div className="flex-item">
-                                        <h3 className='title-flex-item'>{notebook.nombre}</h3>
-                                        <strong>${notebook.precio}</strong>
-                                    </div>
-                                </div>
-                                <div className="btn-container">
-                                    <button>Agregar al carrito</button>
-                                </div>
-                            </div>
+                            <ItemsProductos key={notebook.id} containerClass={'flex-container'} divClass={'description-container'} img={notebook.img} alt={notebook.nombre} containerTitleClass={'flex-item'} titleClass={'title-flex-item'} title={notebook.nombre} precio={`$${notebook.precio}`} />
                         ))
                 }
             </div>

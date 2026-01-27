@@ -97,7 +97,7 @@
 
     .layout-title {
         text-align: center;
-        padding-bottom: 25px;
+        padding: 0 0 25px 0;
     }
 
     .description-container>img:hover {

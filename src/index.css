@@ -19,9 +19,3 @@ main {
     margin: 0 auto;
     padding: 0 2rem;
 }
-
-.grid-principal {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    height: 100vh;
-}

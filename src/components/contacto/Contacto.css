@@ -7,7 +7,7 @@
 }
 
 .title-form {
-    font-size: clamp(1.4rem, 1.7vw, 1.8rem);
+    font-size: clamp(1.2rem, 2vw, 1.5rem);
     font-weight: normal;
     margin-bottom: 25px;
 }
@@ -19,7 +19,7 @@
     flex-direction: column;
     gap: 30px;
     padding: 10px;
-    width: 500px;
+    width: clamp(100%, 90vw, 500px);
 }
 
 .form>input,
@@ -55,7 +55,7 @@
 .btn-form {
     padding: 10px;
     font-family: 'Inter', sans-serif;
-    width: 30%;
+    width: 150px;
     border: 1px solid;
     background: rgb(255, 255, 255);
     border-radius: 50px;

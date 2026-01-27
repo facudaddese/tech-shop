@@ -3,7 +3,7 @@ import './Contacto.css'
 const Contacto = () => {
     return (
         <div className="form-container">
-            <h2 className='title-form'>Contactanos</h2>
+            <h2 className='title-form'>¿Necesitás ayuda?</h2>
             <form onClick={(e) => e.preventDefault()} className='form'>
                 <input type="text" placeholder='Ingrese su nombre...' />
                 <input type="text" placeholder='Ingrese su apellido...' />
