@@ -1,14 +1,13 @@
 import { useState, useEffect } from "react"
-import { getProductos } from "../services/getProductos"
 
-export const useFetch = () => {
+export const usePromise = (promise) => {
 
     const [productos, setProductos] = useState([]);
 
     useEffect(() => {
-        getProductos()
+        promise()
             .then(data => setProductos(data));
-    }, []);
+    }, [promise]);
 
     return { productos }
 }

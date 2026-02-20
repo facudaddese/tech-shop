@@ -1,9 +1,7 @@
-import data from '../data/productos.json'
-
-export const getProductos = () => {
+export const getProductos = (data) => {
     return new Promise((resolve) => {
         setTimeout(() => {
-            resolve(data)
+            resolve(data);
         }, 500);
     })
 }

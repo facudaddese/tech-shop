@@ -1,23 +1,27 @@
-import { useFetch } from '../../hooks/useFetch'
-import ItemsProductos from '../ItemsProductos/ItemsProductos';
+import { usePromise } from '../../hooks/usePromise';
+import ItemList from '../itemList/ItemList';
+import { getProductos } from '../../services/getProductos';
+import data from '../../data/productos.json'
+import { useParams } from 'react-router-dom';
 
-const Notebooks = () => {
+const Notebooks = ({ busqueda }) => {
 
-    const { productos } = useFetch();
+    let { id } = useParams();
+    const { productos } = usePromise(() => getProductos(data));
+
+    const notebooks = [...productos] //copia de los productos porque sort modifica el array original
+        .filter(el => el.categoria === "notebook" && el.nombre.toLowerCase().includes(busqueda.toLowerCase())) //filtramos los productos donde categoria === notebook
+        .sort((a, b) => a.precio - b.precio) //ordenamos las notebooks por precio, de menor a mayor
+
+    //filtro por el id que pase el usuario como parametro
+    const notebookId = notebooks.filter(el => el.id === parseInt(id));
 
     return (
-        <>
-            <div className="productos-container">
-                {
-                    productos
-                        .filter(el => el.categoria === "notebook") //filtramos los producto solo que sean notebooks
-                        .sort((a, b) => a.precio - b.precio) //ordenamos las notebooks por precio, de menor a mayor
-                        .map((notebook) => (
-                            <ItemsProductos key={notebook.id} containerClass={'flex-container'} divClass={'description-container'} img={notebook.img} alt={notebook.nombre} containerTitleClass={'flex-item'} titleClass={'title-flex-item'} title={notebook.nombre} precio={`$${notebook.precio}`} />
-                        ))
-                }
-            </div>
-        </>
+        <div className="productos-container">
+            {
+                notebookId.length > 0 ? <ItemList productos={notebookId} /> : <ItemList productos={notebooks} />
+            }
+        </div>
     )
 }
 

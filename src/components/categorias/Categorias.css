@@ -8,9 +8,15 @@
 }
 
 .grid-container-categorias>div {
-    cursor: pointer;
     position: relative;
+    transition: transform .2s ease;
 }
+
+.grid-container-categorias>div:hover {
+    cursor: pointer;
+    transform: scale(1.02);
+}
+
 
 .grid-container-categorias>div>img {
     width: 100%;

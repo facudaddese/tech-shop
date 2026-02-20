@@ -13,19 +13,13 @@ const Categorias = ({ titulo }) => {
         <section className='layout-container'>
             <h2 className='layout-title'>{titulo}</h2>
             <div className="grid-container-categorias">
-                <ItemCategoria containerClass={'procesador-container'} img={procesador} alt={'Procesador'} imgClass={'procesador'} divClass={'nombre-container'} titleClass={'title-categoria'} titulo={'Procesadores'} />
-
-                <ItemCategoria containerClass={'monitor-container'} img={monitor} alt={'Monitor'} imgClass={'monitor'} divClass={'nombre-container'} titleClass={'title-categoria'} titulo={'Monitores'} />
-
-                <ItemCategoria containerClass={'periferico-container'} img={periferico} alt={'Periferico'} imgClass={'periferico'} divClass={'nombre-container'} titleClass={'title-categoria'} titulo={'Periféricos'} />
-
-                <ItemCategoria containerClass={'notebook-container'} img={notebook} alt={'MeNotebook'} imgClass={'notebook'} divClass={'nombre-container'} titleClass={'title-categoria'} titulo={'Notebooks'} />
-
-                <ItemCategoria containerClass={'ram-container'} img={ram} alt={'Memoria RAM'} imgClass={'ram'} divClass={'nombre-container'} titleClass={'title-categoria'} titulo={'Memorias RAM'} />
-
-                <ItemCategoria containerClass={'gabinete-container'} img={gabinete} alt={'Gabinete'} imgClass={'gabinete'} divClass={'nombre-container'} titleClass={'title-categoria'} titulo={'Gabinetes'} />
-
-                <ItemCategoria containerClass={'placa-container'} img={placaVideo} alt={'Placa de video'} imgClass={'placa-container'} divClass={'nombre-container'} titleClass={'title-categoria'} titulo={'Placas de video'} />
+                <ItemCategoria containerClass={'procesador-container'} img={procesador} alt={'Procesador'} imgClass={'procesador'} titulo={'Procesadores'} />
+                <ItemCategoria containerClass={'monitor-container'} img={monitor} alt={'Monitor'} imgClass={'monitor'} titulo={'Monitores'} />
+                <ItemCategoria containerClass={'periferico-container'} img={periferico} alt={'Periferico'} imgClass={'periferico'} titulo={'Periféricos'} />
+                <ItemCategoria containerClass={'notebook-container'} img={notebook} alt={'MeNotebook'} imgClass={'notebook'} titulo={'Notebooks'} />
+                <ItemCategoria containerClass={'ram-container'} img={ram} alt={'Memoria RAM'} imgClass={'ram'} titulo={'Memorias RAM'} />
+                <ItemCategoria containerClass={'gabinete-container'} img={gabinete} alt={'Gabinete'} imgClass={'gabinete'} titulo={'Gabinetes'} />
+                <ItemCategoria containerClass={'placa-container'} img={placaVideo} alt={'Placa de video'} imgClass={'placa-container'} titulo={'Placas de video'} />
             </div>
         </section>
     )

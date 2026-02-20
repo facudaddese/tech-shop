@@ -1,16 +1,7 @@
-import { useState } from "react"
-
-const Button = () => {
-
-    const [btn, setBtn] = useState();
-
-    const handleBtn = () => {
-        setBtn(btn);
-    }
-
+const Button = ({ description, onClick }) => {
     return (
         <div className="btn-container">
-            <button onClick={handleBtn}>Agregar al carrito</button>
+            <button onClick={onClick}>{description}</button>
         </div>
     )
 }

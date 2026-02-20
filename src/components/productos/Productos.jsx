@@ -1,24 +1,28 @@
 import './Productos.css'
-import { useFetch } from '../../hooks/useFetch'
-import ItemsProductos from '../ItemsProductos/ItemsProductos';
+import { usePromise } from '../../hooks/usePromise';
+import ItemList from '../itemList/ItemList';
+import { getProductos } from '../../services/getProductos';
+import data from '../../data/productos.json'
+import { useParams } from 'react-router-dom';
 
-const Productos = () => {
+const Productos = ({ busqueda }) => {
 
-    const { productos } = useFetch();
+    let { id } = useParams();
+    const { productos } = usePromise(() => getProductos(data));
+
+    const items = [...productos] //copia de los productos porque sort modifica el array original
+        .filter(el => el.categoria !== "notebook" && el.id >= 13 && el.nombre.toLowerCase().includes(busqueda.toLowerCase())) //filtramos los productos donde categoria !== notebook y id >= 13
+        .sort((a, b) => a.precio - b.precio) //ordenamos los productos por precio, de menor a mayor
+
+    //filtro por el id que pase el usuario como parametro
+    const itemId = items.filter(el => el.id === parseInt(id));
 
     return (
-        <>
-            <div className="productos-container">
-                {
-                    productos
-                        .filter(el => el.categoria !== "notebook") //filtramos toos los producto, menos las notebooks
-                        .sort((a, b) => a.precio - b.precio) //ordenamos los producots por precio, de menor a mayor
-                        .map((producto) => (
-                            <ItemsProductos key={producto.id} containerClass={'flex-container'} divClass={'description-container'} img={producto.img} alt={producto.nombre} containerTitleClass={'flex-item'} titleClass={'title-flex-item'} title={producto.nombre} precio={`$${producto.precio}`} />
-                        ))
-                }
-            </div>
-        </>
+        <div className="productos-container">
+            {
+                itemId.length > 0 ? <ItemList productos={itemId} /> : <ItemList productos={items} />
+            }
+        </div>
     )
 }
 

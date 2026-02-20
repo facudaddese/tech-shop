@@ -11,10 +11,12 @@
 .grid-container {
     display: grid;
     justify-content: center;
+    justify-items: center;
     align-items: center;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 30px;
     padding: 10px;
+    margin: 0 auto;
 }
 
 .flex-container {
@@ -33,34 +35,31 @@
 
 .description-container {
     display: flex;
-    gap: 20px;
+    justify-content: space-around;
 }
 
 .description-container>img {
-    width: 40%;
     padding: 10px;
-    transition: transform .5s ease-in-out;
-}
-
-.description-container>img:hover {
-    transform: scale(1.5);
 }
 
 .flex-item {
     display: flex;
     flex-flow: row wrap;
-    align-items: center;
+    justify-content: center;
+    align-content: space-around;
 }
 
 .title-flex-item {
     font-weight: 500;
     font-size: clamp(1rem, 1.2vw, 1.1rem);
+    text-align: center;
+    padding: 7px;
 }
 
 .flex-item>strong {
     font-size: clamp(.8rem, 1vw, .99rem);
     width: 100%;
-    text-align: start;
+    text-align: center;
 }
 
 .btn-container {
@@ -72,8 +71,8 @@
 }
 
 .btn-container>button {
-    border-radius: 15px;
-    padding: 7px;
+    border-radius: 50px;
+    padding: 10px;
     background: #fff;
     border: 1px solid var(--black-color);
 }
@@ -98,9 +97,5 @@
     .layout-title {
         text-align: center;
         padding: 0 0 25px 0;
-    }
-
-    .description-container>img:hover {
-        transform: scale(1.2);
     }
 }

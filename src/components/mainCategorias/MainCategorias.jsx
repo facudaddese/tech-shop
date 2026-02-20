@@ -1,9 +1,9 @@
-const MainCategorias = ({ containerClass, img, alt, imgClass, divClass, titleClass, titulo }) => {
+const MainCategorias = ({ containerClass, img, alt, imgClass, titulo }) => {
     return (
         <div className={containerClass}>
             <img src={img} alt={alt} className={imgClass} />
-            <div className={divClass}>
-                <p className={titleClass}>{titulo}</p>
+            <div className='nombre-container'>
+                <p className='title-categoria'>{titulo}</p>
             </div>
         </div>
     )

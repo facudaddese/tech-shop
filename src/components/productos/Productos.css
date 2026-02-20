@@ -1,20 +1,10 @@
 .productos-container {
     display: grid;
-    grid-template-columns: repeat(3, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     align-items: center;
     justify-items: center;
     align-content: center;
     justify-content: center;
     gap: 2rem;
-    margin: 0 auto;
     padding: 50px;
-}
-
-/* MEDIA QUERIES */
-
-@media (max-width:1024px) {
-
-    .productos-container {
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    }
 }

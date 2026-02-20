@@ -1,15 +1,29 @@
 import './MainLayout.css'
 import Novedades from '../novedades/Novedades'
 import Destacados from '../destacados/Destacados'
-import Categorias from '../categorias/Categorias'
+import { usePromise } from '../../hooks/usePromise'
+import { getProductos } from '../../services/getProductos'
+// import { useProductos } from '../../hooks/useProductos'
+// import Categorias from '../categorias/Categorias'
+import data from '../../data/productos.json'
 
-const MainLayout = () => {
+const MainLayout = ({ busqueda }) => {
+
+    const { productos } = usePromise(() => getProductos(data));
+    const novedades =
+        productos.filter(el => el.id >= 1 && el.id <= 6 && el.nombre.toLowerCase().includes(busqueda.toLowerCase())).length > 0;
+    const destacados =
+        productos.filter(el => el.id >= 7 && el.id <= 12 && el.nombre.toLowerCase().includes(busqueda.toLowerCase())).length > 0;
 
     return (
         <main>
-            <Novedades titulo={"Conocé nuestras últimas novedades"} />
-            <Destacados titulo={"Conocé nuestros productos destacados"} />
-            <Categorias titulo={"Explorá nuestras categoría"} />
+            {
+                novedades && <Novedades titulo={"Conocé nuestras últimas novedades"} busqueda={busqueda} />
+            }
+            {
+                destacados && <Destacados titulo={"Conocé nuestros productos destacados"} busqueda={busqueda} />
+            }
+            {/* <Categorias titulo={"Explorá nuestras categoría"} /> */}
         </main>
     )
 }

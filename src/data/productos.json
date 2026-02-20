@@ -1,6 +1,102 @@
 [
     {
         "id": 1,
+        "categoria": "Auriculares",
+        "nombre": "Auriculares Corsair 2.4Ghz Bluetooth",
+        "descripcion": "Auriculares inalámbricos Corsair con conexión 2.4Ghz y Bluetooth, ideales para gaming.",
+        "precio": 70500,
+        "img": "/novedades/auriculares.jpg"
+    },
+    {
+        "id": 2,
+        "categoria": "Microfonos",
+        "nombre": "Micrófono Razer Seiren V3 Chroma RGB Black",
+        "descripcion": "Micrófono USB Razer con iluminación RGB Chroma y calidad profesional.",
+        "precio": 17750,
+        "img": "/novedades/microfono.jpg"
+    },
+    {
+        "id": 3,
+        "categoria": "Auriculares",
+        "nombre": "Auriculares Corsair Void V2 Elite Wireless 2.4Ghz",
+        "descripcion": "Auriculares gamer inalámbricos Corsair Void V2 con sonido envolvente.",
+        "precio": 21600,
+        "img": "/novedades/auriculares2.jpg"
+    },
+    {
+        "id": 4,
+        "categoria": "Mousepad",
+        "nombre": "Mouse Pad Logitech G POWERPLAY 2 Carga Inalámbrica",
+        "descripcion": "Mouse pad Logitech con sistema de carga inalámbrica continua.",
+        "precio": 24200,
+        "img": "/novedades/mousePad.jpg"
+    },
+    {
+        "id": 5,
+        "categoria": "Teclados",
+        "nombre": "Teclado Mecánico Corsair RGB",
+        "descripcion": "Teclado mecánico Corsair con retroiluminación RGB personalizable.",
+        "precio": 24300,
+        "img": "/novedades/tecladoMecanico.jpg"
+    },
+    {
+        "id": 6,
+        "categoria": "Mouse",
+        "nombre": "Mouse Razer DeathAdder White Cableado",
+        "descripcion": "Mouse gamer Razer DeathAdder blanco con sensor de alta precisión.",
+        "precio": 30400,
+        "img": "/novedades/mouseWhite.jpg"
+    },
+    {
+        "id": 7,
+        "categoria": "Monitores",
+        "nombre": "Monitor Gamer Samsung Odyssey G5 G50SF 27\"",
+        "descripcion": "Monitor gamer Samsung Odyssey G5 de 27 pulgadas con alta tasa de refresco.",
+        "precio": 77500,
+        "img": "/destacados/monitorGamer.jpg"
+    },
+    {
+        "id": 8,
+        "categoria": "Monitores",
+        "nombre": "Monitor Gamer Samsung Odyssey G9 G91F 49\"",
+        "descripcion": "Monitor ultra wide Samsung Odyssey G9 de 49 pulgadas para gaming extremo.",
+        "precio": 1700000,
+        "img": "/destacados/monitorGamer2.jpg"
+    },
+    {
+        "id": 9,
+        "categoria": "Notebooks",
+        "nombre": "Notebook ASUS Vivobook Go 15 15.6\"",
+        "descripcion": "Notebook ASUS Vivobook Go 15 ideal para trabajo y estudio.",
+        "precio": 750000,
+        "img": "/destacados/notebook.jpg"
+    },
+    {
+        "id": 10,
+        "categoria": "Sillas Gamer",
+        "nombre": "Silla Gamer Razer Negro y Verde",
+        "descripcion": "Silla gamer Razer ergonómica con diseño negro y verde.",
+        "precio": 470000,
+        "img": "/destacados/sillaGamer.jpg"
+    },
+    {
+        "id": 11,
+        "categoria": "Teclados",
+        "nombre": "Teclado Mecánico SteelSeries Apex 7 OLED",
+        "descripcion": "Teclado mecánico SteelSeries con pantalla OLED integrada.",
+        "precio": 183000,
+        "img": "/destacados/tecladoMecanico.jpg"
+    },
+    {
+        "id": 12,
+        "categoria": "Sillas Gamer",
+        "nombre": "Silla Gamer Razer Iskur V2 X 2D",
+        "descripcion": "Silla gamer Razer Iskur V2 X con soporte lumbar avanzado.",
+        "precio": 465000,
+        "img": "/destacados/sillaGamer2.jpg"
+    },
+    {
+        "id": 13,
         "categoria": "gabinete",
         "nombre": "Gabinete ASUS TUF GT501",
         "descripcion": "4x120mm RGB Fans Aura Sync",
@@ -8,7 +104,7 @@
         "img": "/productos/gabinete1.jpg"
     },
     {
-        "id": 2,
+        "id": 14,
         "categoria": "gabinete",
         "nombre": "Gabinete ASUS TUF GT301",
         "descripcion": "4x120mm ARGB Fans",
@@ -16,7 +112,7 @@
         "img": "/productos/gabinete2.jpg"
     },
     {
-        "id": 3,
+        "id": 15,
         "categoria": "gabinete",
         "nombre": "Gabinete Corsair 6500D Airflow TG",
         "descripcion": "Alto flujo de aire",
@@ -24,7 +120,7 @@
         "img": "/productos/gabinete3.jpg"
     },
     {
-        "id": 4,
+        "id": 16,
         "categoria": "gabinete",
         "nombre": "Gabinete HYTE Y70 TOUCH INFINITE Black",
         "descripcion": "Pantalla táctil 2.5K IPS + Riser PCIe 4.0",
@@ -32,7 +128,7 @@
         "img": "/productos/gabinete4.jpg"
     },
     {
-        "id": 5,
+        "id": 17,
         "categoria": "gabinete",
         "nombre": "Gabinete HYTE Y70 TOUCH INFINITE Snow White",
         "descripcion": "Pantalla táctil 2.5K IPS + Riser PCIe 4.0",
@@ -40,7 +136,7 @@
         "img": "/productos/gabinete5.jpg"
     },
     {
-        "id": 6,
+        "id": 18,
         "categoria": "gabinete",
         "nombre": "Gabinete HYTE Y70 TOUCH INFINITE Panda",
         "descripcion": "Pantalla táctil 2.5K IPS + Riser PCIe 4.0",
@@ -48,7 +144,7 @@
         "img": "/productos/gabinete6.jpg"
     },
     {
-        "id": 7,
+        "id": 19,
         "categoria": "monitor",
         "nombre": "Monitor Acer Nitro 34\"",
         "descripcion": "QHD VA 200Hz 1ms FreeSync",
@@ -56,7 +152,7 @@
         "img": "/productos/monitor1.jpg"
     },
     {
-        "id": 8,
+        "id": 20,
         "categoria": "monitor",
         "nombre": "Monitor Samsung Odyssey 27\"",
         "descripcion": "QHD VA 240Hz Curvo 1000R",
@@ -64,7 +160,7 @@
         "img": "/productos/monitor2.jpg"
     },
     {
-        "id": 9,
+        "id": 21,
         "categoria": "monitor",
         "nombre": "Monitor ViewSonic 34\"",
         "descripcion": "QHD VA 180Hz Curvo 1500R",
@@ -72,7 +168,7 @@
         "img": "/productos/monitor3.jpg"
     },
     {
-        "id": 10,
+        "id": 22,
         "categoria": "monitor",
         "nombre": "Monitor ViewSonic VX3418-2KPC 34\"",
         "descripcion": "QHD VA 180Hz Curvo 1500R",
@@ -80,7 +176,7 @@
         "img": "/productos/monitor4.jpg"
     },
     {
-        "id": 11,
+        "id": 23,
         "categoria": "monitor",
         "nombre": "Monitor AsRock Phantom 27\"",
         "descripcion": "QHD IPS 180Hz Base regulable",
@@ -88,7 +184,7 @@
         "img": "/productos/monitor5.jpg"
     },
     {
-        "id": 12,
+        "id": 24,
         "categoria": "monitor",
         "nombre": "Monitor Acer Predator 24.5\"",
         "descripcion": "FHD IPS 300Hz FreeSync",
@@ -96,7 +192,7 @@
         "img": "/productos/monitor6.jpg"
     },
     {
-        "id": 13,
+        "id": 25,
         "categoria": "mouse",
         "nombre": "Mouse Corsair Nightsabre SlipStream Wireless",
         "descripcion": "RGB 26K DPI 100Hs",
@@ -104,7 +200,7 @@
         "img": "/productos/mouse1.jpg"
     },
     {
-        "id": 14,
+        "id": 26,
         "categoria": "mouse",
         "nombre": "Mouse Redragon Griffin M607 RGB",
         "descripcion": "Mouse gamer RGB",
@@ -112,7 +208,7 @@
         "img": "/productos/mouse2.jpg"
     },
     {
-        "id": 15,
+        "id": 27,
         "categoria": "notebook",
         "nombre": "Notebook Acer Aspire Go 15",
         "descripcion": "i5 1334U 8GB DDR5 SSD 256GB Win11",
@@ -120,7 +216,7 @@
         "img": "/productos/notebook1.jpg"
     },
     {
-        "id": 16,
+        "id": 28,
         "categoria": "notebook",
         "nombre": "Notebook Lenovo ThinkBook 16 G6",
         "descripcion": "Ryzen 5 7430U 8GB SSD 512GB",
@@ -128,7 +224,7 @@
         "img": "/productos/notebook2.jpg"
     },
     {
-        "id": 17,
+        "id": 29,
         "categoria": "notebook",
         "nombre": "Notebook Acer Aspire 3 Touch",
         "descripcion": "Ryzen 5 7520U 8GB DDR5 SSD 512GB",
@@ -136,7 +232,7 @@
         "img": "/productos/notebook3.jpg"
     },
     {
-        "id": 18,
+        "id": 30,
         "categoria": "notebook",
         "nombre": "Notebook Gamer Acer Nitro 5",
         "descripcion": "i7-12650H RTX 4060 165Hz",
@@ -144,7 +240,7 @@
         "img": "/productos/notebook4.jpg"
     },
     {
-        "id": 19,
+        "id": 31,
         "categoria": "notebook",
         "nombre": "Notebook Gamer MSI Cyborg A13VE",
         "descripcion": "i7 13620H RTX 4050 144Hz",
@@ -152,7 +248,7 @@
         "img": "/productos/notebook5.jpg"
     },
     {
-        "id": 20,
+        "id": 32,
         "categoria": "notebook",
         "nombre": "Notebook ASUS ROG Strix SCAR 18",
         "descripcion": "Ultra 9 RTX 5080 240Hz",
@@ -160,7 +256,7 @@
         "img": "/productos/notebook6.jpg"
     },
     {
-        "id": 21,
+        "id": 33,
         "categoria": "placa_video",
         "nombre": "Gigabyte GeForce RTX 5080 AERO OC",
         "descripcion": "16GB GDDR7",
@@ -168,7 +264,7 @@
         "img": "/productos/placaVideo1.jpg"
     },
     {
-        "id": 22,
+        "id": 34,
         "categoria": "placa_video",
         "nombre": "ASUS PRIME GeForce RTX 5080 OC",
         "descripcion": "16GB GDDR7",
@@ -176,7 +272,7 @@
         "img": "/productos/placaVideo2.jpg"
     },
     {
-        "id": 23,
+        "id": 35,
         "categoria": "placa_video",
         "nombre": "Zotac GeForce RTX 5080 SOLID CORE OC",
         "descripcion": "16GB GDDR7",
@@ -184,7 +280,7 @@
         "img": "/productos/placaVideo3.jpg"
     },
     {
-        "id": 24,
+        "id": 36,
         "categoria": "placa_video",
         "nombre": "Zotac GeForce RTX 5070 Ti SOLID SFF OC",
         "descripcion": "16GB GDDR7",
@@ -192,7 +288,7 @@
         "img": "/productos/placaVideo4.jpg"
     },
     {
-        "id": 25,
+        "id": 37,
         "categoria": "placa_video",
         "nombre": "Zotac GeForce RTX 3050 Twin Edge OC",
         "descripcion": "6GB GDDR6",
@@ -200,7 +296,7 @@
         "img": "/productos/placaVideo5.jpg"
     },
     {
-        "id": 26,
+        "id": 38,
         "categoria": "procesador",
         "nombre": "Intel Core i9 14900K",
         "descripcion": "Socket 1700 6.0GHz Turbo",
@@ -208,15 +304,15 @@
         "img": "/productos/procesador1.jpg"
     },
     {
-        "id": 27,
+        "id": 39,
         "categoria": "procesador",
-        "nombre": "Intel Pentium G4560",
+        "nombre": "Procesador Intel Pentium G4560 LGA1151 KABY LAKE OEM",
         "descripcion": "LGA1151 Kaby Lake",
         "precio": 32700,
         "img": "/productos/procesador2.jpg"
     },
     {
-        "id": 28,
+        "id": 40,
         "categoria": "procesador",
         "nombre": "AMD Ryzen 3 4100",
         "descripcion": "AM4 + Wraith Stealth",
@@ -224,7 +320,7 @@
         "img": "/productos/procesador3.jpg"
     },
     {
-        "id": 29,
+        "id": 41,
         "categoria": "procesador",
         "nombre": "AMD Ryzen 5 5600XT",
         "descripcion": "AM4 4.6GHz Turbo",
@@ -232,7 +328,7 @@
         "img": "/productos/procesador4.jpg"
     },
     {
-        "id": 30,
+        "id": 42,
         "categoria": "procesador",
         "nombre": "AMD Ryzen 9 9950X3D",
         "descripcion": "AM5 5.7GHz Turbo",
@@ -240,7 +336,7 @@
         "img": "/productos/procesador5.jpg"
     },
     {
-        "id": 31,
+        "id": 43,
         "categoria": "procesador",
         "nombre": "Intel Core i5 14600KF",
         "descripcion": "Socket 1700 5.3GHz Turbo",
@@ -248,7 +344,7 @@
         "img": "/productos/procesador6.jpg"
     },
     {
-        "id": 32,
+        "id": 44,
         "categoria": "ram",
         "nombre": "Kingston Fury Beast DDR5 64GB",
         "descripcion": "6000MHz RGB CL30",
@@ -256,7 +352,7 @@
         "img": "/productos/ram1.jpg"
     },
     {
-        "id": 33,
+        "id": 45,
         "categoria": "ram",
         "nombre": "G.Skill Ripjaws V DDR4 16GB",
         "descripcion": "3200MHz CL16",
@@ -264,7 +360,7 @@
         "img": "/productos/ram2.jpg"
     },
     {
-        "id": 34,
+        "id": 46,
         "categoria": "ram",
         "nombre": "Corsair Vengeance LPX DDR5 16GB",
         "descripcion": "5200MHz CL40",
@@ -272,7 +368,7 @@
         "img": "/productos/ram3.jpg"
     },
     {
-        "id": 35,
+        "id": 47,
         "categoria": "ram",
         "nombre": "Team Vulcan DDR4 16GB ASUS TUF",
         "descripcion": "3200MHz CL16",
@@ -280,7 +376,7 @@
         "img": "/productos/ram4.jpg"
     },
     {
-        "id": 36,
+        "id": 48,
         "categoria": "ram",
         "nombre": "Team T-Force Vulcan Z DDR4 16GB",
         "descripcion": "3200MHz CL16",
@@ -288,7 +384,7 @@
         "img": "/productos/ram5.jpg"
     },
     {
-        "id": 37,
+        "id": 49,
         "categoria": "ram",
         "nombre": "Patriot Viper Venom DDR5 16GB",
         "descripcion": "5200MHz CL36",
@@ -296,7 +392,7 @@
         "img": "/productos/ram6.jpg"
     },
     {
-        "id": 38,
+        "id": 50,
         "categoria": "teclado",
         "nombre": "Teclado Corsair K65 PLUS Wireless",
         "descripcion": "75% RGB Switch Red",
@@ -304,7 +400,7 @@
         "img": "/productos/teclado1.jpg"
     },
     {
-        "id": 39,
+        "id": 51,
         "categoria": "teclado",
         "nombre": "Teclado Redragon Kumara K552",
         "descripcion": "Outemu Red RGB",
@@ -312,7 +408,7 @@
         "img": "/productos/teclado2.jpg"
     },
     {
-        "id": 40,
+        "id": 52,
         "categoria": "combo",
         "nombre": "Redragon Teclado K552 + Mouse M601 + Auris H101 + Mouse Pad",
         "descripcion": "Outemu Red RGB",
