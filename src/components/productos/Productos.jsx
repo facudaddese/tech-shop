@@ -5,7 +5,7 @@ import { getProductos } from '../../services/getProductos';
 import data from '../../data/productos.json'
 import { useParams } from 'react-router-dom';
 
-const Productos = ({ busqueda }) => {
+const Productos = ({ busqueda, onClick }) => {
 
     let { id } = useParams();
     const { productos } = usePromise(() => getProductos(data));
@@ -20,7 +20,7 @@ const Productos = ({ busqueda }) => {
     return (
         <div className="productos-container">
             {
-                itemId.length > 0 ? <ItemList productos={itemId} /> : <ItemList productos={items} />
+                itemId.length > 0 ? <ItemList productos={itemId} onClick={onClick} /> : <ItemList productos={items} onClick={onClick} />
             }
         </div>
     )

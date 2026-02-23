@@ -1,18 +1,27 @@
 import './ItemDetail.css'
 
-const ItemDetail = ({ producto, children }) => {
+const ItemDetail = ({ itemSeleccionado, children, onClick }) => {
 
-    if (!producto) return null;
+    if (!itemSeleccionado) return null;
 
     return (
-        <div className="item-detail" key={producto.id}>
-            <img src={producto.img} alt={producto.nombre} />
-            <div className="item-detail-info">
-                <h2>{producto.nombre}</h2>
-                <p>{producto.descripcion}</p>
-                <strong>${producto.precio}</strong>
+        <div className="item-detail-container">
+            <div className="cerrar-modal">
+                <span className="material-symbols-outlined" onClick={onClick}>close</span>
             </div>
-            {children}
+            <div className="item-detail">
+                <div className="img-detail-container">
+                    <img src={itemSeleccionado.img} alt={itemSeleccionado.nombre} />
+                </div>
+                <div className="item-detail-info">
+                    <h2>{itemSeleccionado.nombre}</h2>
+                    <p>{itemSeleccionado.descripcion}</p>
+                    <strong>${itemSeleccionado.precio}</strong>
+                    <div id='btn-agregar'>
+                        {children}
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

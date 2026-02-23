@@ -7,7 +7,7 @@ import { getProductos } from '../../services/getProductos'
 // import Categorias from '../categorias/Categorias'
 import data from '../../data/productos.json'
 
-const MainLayout = ({ busqueda }) => {
+const MainLayout = ({ busqueda, onClick }) => {
 
     const { productos } = usePromise(() => getProductos(data));
     const novedades =
@@ -18,10 +18,10 @@ const MainLayout = ({ busqueda }) => {
     return (
         <main>
             {
-                novedades && <Novedades titulo={"Conocé nuestras últimas novedades"} busqueda={busqueda} />
+                novedades && <Novedades titulo={"Conocé nuestras últimas novedades"} onClick={onClick} busqueda={busqueda} />
             }
             {
-                destacados && <Destacados titulo={"Conocé nuestros productos destacados"} busqueda={busqueda} />
+                destacados && <Destacados titulo={"Conocé nuestros productos destacados"} onClick={onClick} busqueda={busqueda} />
             }
             {/* <Categorias titulo={"Explorá nuestras categoría"} /> */}
         </main>

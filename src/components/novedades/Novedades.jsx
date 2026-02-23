@@ -4,7 +4,7 @@ import data from '../../data/productos.json'
 import ItemList from '../itemList/ItemList'
 import { useParams } from 'react-router-dom'
 
-const Novedades = ({ titulo, busqueda }) => {
+const Novedades = ({ titulo, busqueda, onClick }) => {
 
     let { id } = useParams();
     const { productos } = usePromise(() => getProductos(data));
@@ -19,7 +19,7 @@ const Novedades = ({ titulo, busqueda }) => {
             <h2 className='layout-title'>{titulo}</h2>
             <div className="grid-container">
                 {
-                    novedadId.length > 0 ? <ItemList productos={novedadId} /> : <ItemList productos={novedades} />
+                    novedadId.length > 0 ? <ItemList productos={novedadId} onClick={onClick} /> : <ItemList productos={novedades} onClick={onClick} />
                 }
             </div>
         </section>
