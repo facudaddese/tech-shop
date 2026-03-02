@@ -7,7 +7,7 @@ const ItemList = ({ productos, onClick }) => {
             {
                 productos.map((producto) => (
                     <div data-aos="flip-right" key={producto.id}>
-                        <Item img={producto.img} alt={producto.nombre} title={producto.nombre} precio={`$${producto.precio}`} producto={productos.length === 1} >
+                        <Item img={producto.img} alt={producto.nombre} title={producto.nombre} precio={`$${producto.precio}`} producto={productos.length === 1} id={producto.id}>
                             <Button btn={"Ver más"} onClick={() => onClick(producto)} />
                         </Item>
                     </div>

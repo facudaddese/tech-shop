@@ -68,7 +68,7 @@
     flex-flow: row wrap;
     justify-content: center;
     align-items: center;
-    padding-bottom: 10px;
+    padding: 10px 0;
 }
 
 .btn-container>button {

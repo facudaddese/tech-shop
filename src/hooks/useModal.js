@@ -1,17 +1,29 @@
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 export const useModal = () => {
 
     const [modal, setModal] = useState(false);
-    const [itemSeleccionado, setItemSeleccionado] = useState({});
+    const [itemSeleccionado, setItemSeleccionado] = useState(null);
 
     const handleModal = () => {
-        setModal(!modal);
+        setModal(prev => !prev);
     }
 
     const handleItem = (item) => {
         setItemSeleccionado(item);
     }
 
-    return { modal, handleModal, handleItem, itemSeleccionado }
+    const handleBtns = (item) => {
+        handleItem(item);
+        handleModal();
+    }
+
+    useEffect(() => {
+        document.body.style.overflow = modal ? "hidden" : "";
+        return () => {
+            document.body.style.overflow = "";
+        };
+    }, [modal]);
+
+    return { modal, handleBtns, itemSeleccionado }
 }
