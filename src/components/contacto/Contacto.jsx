@@ -26,7 +26,7 @@ const Contacto = () => {
         }
 
         setTimeout(() => {
-            success("Mensaje enviado correctamente ✅");
+            success("Mensaje enviado correctamente");
             reset();
         }, 1000);
     }
