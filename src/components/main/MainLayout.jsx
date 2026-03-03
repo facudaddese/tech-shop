@@ -3,17 +3,18 @@ import Novedades from '../novedades/Novedades'
 import Destacados from '../destacados/Destacados'
 import { usePromise } from '../../hooks/usePromise'
 import { getProductos } from '../../services/getProductos'
-// import { useProductos } from '../../hooks/useProductos'
-// import Categorias from '../categorias/Categorias'
 import data from '../../data/productos.json'
+import { PuffLoader } from "react-spinners"
 
 const MainLayout = ({ busqueda, onClick }) => {
 
-    const { productos } = usePromise(() => getProductos(data));
+    const { productos, loading } = usePromise(() => getProductos(data));
     const novedades =
         productos.filter(el => el.id >= 1 && el.id <= 6 && el.nombre.toLowerCase().includes(busqueda.toLowerCase())).length > 0;
     const destacados =
         productos.filter(el => el.id >= 7 && el.id <= 12 && el.nombre.toLowerCase().includes(busqueda.toLowerCase())).length > 0;
+
+    if (loading) return <div style={{ display: "flex", justifyContent: "center", padding: "50px" }}><PuffLoader color="#000" /></div>
 
     return (
         <main>

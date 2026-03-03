@@ -3,17 +3,20 @@ import { getProductos } from '../../services/getProductos'
 import data from '../../data/productos.json'
 import ItemList from '../itemList/ItemList'
 import { useParams } from 'react-router-dom'
+import { PuffLoader } from "react-spinners"
 
 const Novedades = ({ titulo, busqueda, onClick }) => {
 
     let { id } = useParams();
-    const { productos } = usePromise(() => getProductos(data));
+    const { productos, loading } = usePromise(() => getProductos(data));
     const novedades = [...productos]
         .filter(el => el.id >= 1 && el.id <= 6 && el.nombre.toLowerCase().includes(busqueda.toLowerCase()));
 
     //filtro por el id que pase el usuario como parametro
     const novedadId = novedades.filter(el => el.id === parseInt(id));
 
+    if (loading) return <div style={{ display: "flex", justifyContent: "center", padding: "50px" }}><PuffLoader color="#000" /></div>
+    
     return (
         <section className="layout-container" style={{ display: titulo ? 'block' : 'none' }}>
             <h2 className='layout-title'>{titulo}</h2>

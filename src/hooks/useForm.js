@@ -12,5 +12,7 @@ export const useForm = (initialState = {}) => {
         })
     }
 
-    return { ...input, handleInput }
+    const reset = () => { setInput(initialState); };
+
+    return { ...input, handleInput, reset }
 }
