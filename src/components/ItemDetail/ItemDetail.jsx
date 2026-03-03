@@ -13,7 +13,7 @@ const ItemDetail = ({ itemSeleccionado, children, onClick }) => {
     return (
         <div className="item-detail-container">
             <div className="cerrar-modal">
-                <span className="material-symbols-outlined" onClick={onClick}>close</span>
+                <span className="material-symbols-outlined close-item-detail" onClick={onClick}>close</span>
             </div>
             <div className="item-detail">
                 <div className="img-detail-container">
@@ -22,7 +22,7 @@ const ItemDetail = ({ itemSeleccionado, children, onClick }) => {
                 <div className="item-detail-info">
                     <h2>{itemSeleccionado.nombre}</h2>
                     <p>{itemSeleccionado.descripcion}</p>
-                    <strong>${itemSeleccionado.precio}</strong>
+                    <strong>${itemSeleccionado.precio.toLocaleString("es-AR")}</strong>
                     <p style={{ fontWeight: "bold", color: stockDisponible > 0 ? "#21C22C" : "#DC2626" }}>{stockDisponible > 0 ? `Stock disponible: ${stockDisponible}` : "Sin stock"}</p>
                     {
                         stockDisponible > 0 &&

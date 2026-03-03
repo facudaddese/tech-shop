@@ -16,6 +16,7 @@ import ItemDetail from './components/ItemDetail/ItemDetail'
 import Button from './components/button/Button'
 import Contacto from './components/contacto/Contacto'
 import Footer from './components/footer/Footer'
+import { useModalCart } from './hooks/useModalCart'
 
 const App = () => {
   useAos();
@@ -27,39 +28,39 @@ const App = () => {
     setBusqueda('');
   }, [location.pathname, setBusqueda])
 
-  const { modal, handleBtns, itemSeleccionado } = useModal();
+  const { carrito, handleSumarCantidad, handleRestarCantidad, agregarAlCarrito, handleDelete, cantidad, setCantidad, handleSumarCart, handleRestarCart } = useCarrito();
 
-  const { carrito, handleSumarCantidad, handleRestarCantidad, agregarAlCarrito, cantidad } = useCarrito();
+  const { modal, handleBtns, itemSeleccionado } = useModal(setCantidad);
+
+  const { modalCart, handleModalCart } = useModalCart(carrito);
 
   return (
-    <CartContext.Provider value={{ carrito, handleSumarCantidad, handleRestarCantidad, agregarAlCarrito, cantidad }}>
-      <div className='grid-principal'>
-        <ToastContainer position="top-right" autoClose={2000} theme="dark" />
-        {
-          modal &&
-          <>
-            <div style={{ position: "fixed", top: 0, left: 0, background: "rgba(0, 0, 0, 0.5)", width: "100%", height: "100%", zIndex: 100 }} />
-            <ItemDetail itemSeleccionado={itemSeleccionado} onClick={handleBtns}>
-              <Button btn="Agregar al carrito" />
-            </ItemDetail>
-          </>
-        }
-        <Header titulo="TechShop" busqueda={busqueda} handleBusqueda={handleBusqueda} location={location} />
-        <NavBar />
+    <CartContext.Provider value={{ carrito, handleSumarCantidad, handleRestarCantidad, agregarAlCarrito, handleDelete, cantidad, handleSumarCart, handleRestarCart }}>
+      <ToastContainer position="top-right" autoClose={2000} theme="dark" />
+      {
+        modal &&
+        <>
+          <div style={{ position: "fixed", top: 0, left: 0, background: "rgba(0, 0, 0, 0.5)", width: "100%", height: "100%", zIndex: 100 }} />
+          <ItemDetail itemSeleccionado={itemSeleccionado} onClick={handleBtns}>
+            <Button btn="Agregar al carrito" />
+          </ItemDetail>
+        </>
+      }
+      <Header titulo="TechShop" busqueda={busqueda} handleBusqueda={handleBusqueda} location={location} modalCart={modalCart} handleModalCart={handleModalCart} />
+      <NavBar />
 
-        <Routes>
-          <Route path="/" element={<MainLayout onClick={handleBtns} busqueda={busqueda} />} />
-          <Route path="/:id" element={<MainLayout onClick={handleBtns} busqueda={busqueda} />} />
-          <Route path="/productos" element={<Productos onClick={handleBtns} busqueda={busqueda} />} />
-          <Route path="/productos/:id" element={<Productos onClick={handleBtns} busqueda={busqueda} />} />
-          <Route path="/notebooks" element={<Notebooks onClick={handleBtns} busqueda={busqueda} />} />
-          <Route path="/notebooks/:id" element={<Notebooks onClick={handleBtns} busqueda={busqueda} />} />
-          <Route path="/contacto" element={<Contacto />} />
-          <Route path="*" element={<MainLayout onClick={handleBtns} />} />
+      <Routes>
+        <Route path="/" element={<MainLayout onClick={handleBtns} busqueda={busqueda} />} />
+        <Route path="/:id" element={<MainLayout onClick={handleBtns} busqueda={busqueda} />} />
+        <Route path="/productos" element={<Productos onClick={handleBtns} busqueda={busqueda} />} />
+        <Route path="/productos/:id" element={<Productos onClick={handleBtns} busqueda={busqueda} />} />
+        <Route path="/notebooks" element={<Notebooks onClick={handleBtns} busqueda={busqueda} />} />
+        <Route path="/notebooks/:id" element={<Notebooks onClick={handleBtns} busqueda={busqueda} />} />
+        <Route path="/contacto" element={<Contacto />} />
+        <Route path="*" element={<MainLayout onClick={handleBtns} />} />
 
-        </Routes>
-        <Footer />
-      </div >
+      </Routes>
+      <Footer />
     </CartContext.Provider>
   )
 }

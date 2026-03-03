@@ -1,12 +1,13 @@
 import { useState, useEffect } from "react"
 
-export const useModal = () => {
+export const useModal = (setCantidad) => {
 
     const [modal, setModal] = useState(false);
     const [itemSeleccionado, setItemSeleccionado] = useState(null);
 
     const handleModal = () => {
         setModal(prev => !prev);
+        setCantidad(1);
     }
 
     const handleItem = (item) => {

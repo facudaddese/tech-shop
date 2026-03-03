@@ -21,6 +21,15 @@ const Notebooks = ({ busqueda, onClick }) => {
             {
                 notebookId.length > 0 ? <ItemList productos={notebookId} onClick={onClick} /> : <ItemList productos={notebooks} onClick={onClick} />
             }
+            {
+                busqueda &&
+                <section className="not-found">
+                    {
+                        notebooks.length === 0 &&
+                        <p style={{ textAlign: "center", fontWeight: "bold", display: "flex", margin: "auto", fontSize: "25px" }}>No hay resultados para tu búsqueda</p>
+                    }
+                </section>
+            }
         </div>
     )
 }

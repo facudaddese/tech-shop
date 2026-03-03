@@ -23,7 +23,15 @@ const MainLayout = ({ busqueda, onClick }) => {
             {
                 destacados && <Destacados titulo={"Conocé nuestros productos destacados"} onClick={onClick} busqueda={busqueda} />
             }
-            {/* <Categorias titulo={"Explorá nuestras categoría"} /> */}
+            {
+                busqueda && !novedades && !destacados &&
+                <section className="not-found">
+                    {
+                        !novedades && !destacados &&
+                        <p style={{ textAlign: "center", fontWeight: "bold", display: "flex", margin: "auto", fontSize: "25px" }}>No hay resultados para tu búsqueda</p>
+                    }
+                </section>
+            }
         </main>
     )
 }

@@ -12,8 +12,21 @@ export const useCarrito = () => {
 
     const handleRestarCantidad = () => { cantidad > 1 && setCantidad(cantidad - 1) }
 
+    const handleSumarCart = (item) => {
+        if (item.cantidad < item.stock) {
+            setCarrito(carrito.map((producto) => producto.id === item.id ? { ...producto, cantidad: producto.cantidad + 1 } : producto));
+            return;
+        }
+    }
+
+    const handleRestarCart = (item) => {
+        if (item.cantidad > 1) {
+            setCarrito(carrito.map((producto) => producto.id === item.id ? { ...producto, cantidad: producto.cantidad - 1 } : producto));
+            return;
+        }
+    }
+
     const agregarAlCarrito = (item) => {
-        //Hago una copia del carrito original
         const nuevoCarrito = [...carrito];
 
         //Busco el producto en el carrito
@@ -36,5 +49,9 @@ export const useCarrito = () => {
         localStorage.setItem("carrito", JSON.stringify(carrito));
     }, [carrito]);
 
-    return { carrito, handleSumarCantidad, handleRestarCantidad, agregarAlCarrito, cantidad }
+    const handleDelete = (id) => {
+        setCarrito(carrito.filter((item) => item.id !== id));
+    }
+
+    return { carrito, handleSumarCantidad, handleRestarCantidad, agregarAlCarrito, handleDelete, cantidad, setCantidad, handleSumarCart, handleRestarCart }
 }

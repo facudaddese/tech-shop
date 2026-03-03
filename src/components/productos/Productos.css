@@ -8,3 +8,19 @@
     gap: 2rem;
     padding: 50px;
 }
+
+/* MEDIA QUERIES */
+@media (max-width:425px) {
+
+    .productos-container {
+        grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+
+    }
+}
+
+@media (max-width: 340px) {
+
+    .productos-container {
+        padding-top: 25px;
+    }
+}
