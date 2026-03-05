@@ -18,14 +18,14 @@ const Notebooks = ({ busqueda, onClick }) => {
     const notebookId = notebooks.filter(el => el.id === parseInt(id));
 
     if (loading) return <div style={{ display: "flex", justifyContent: "center", padding: "50px" }}><PuffLoader color="#000" /></div>
-    
+
     return (
         <div className="productos-container">
             {
                 notebookId.length > 0 ? <ItemList productos={notebookId} onClick={onClick} /> : <ItemList productos={notebooks} onClick={onClick} />
             }
             {
-                busqueda &&
+                busqueda && notebooks.length === 0 &&
                 <section className="not-found">
                     {
                         notebooks.length === 0 &&

@@ -26,7 +26,7 @@ const Productos = ({ busqueda, onClick }) => {
                 itemId.length > 0 ? <ItemList productos={itemId} onClick={onClick} /> : <ItemList productos={items} onClick={onClick} />
             }
             {
-                busqueda &&
+                busqueda && items === 0 &&
                 <section className="not-found">
                     {
                         items.length === 0 &&

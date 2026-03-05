@@ -1,10 +1,14 @@
 import "./CartWidget.css"
 import { useContext } from "react"
 import { CartContext } from "../cartContext/CartContext"
+import { useToastify } from '../../hooks/useToastify'
 
 const CartWidget = ({ modalCart, handleModalCart, children }) => {
 
     const { carrito, handleDelete, handleSumarCart, handleRestarCart } = useContext(CartContext);
+
+    const { success } = useToastify();
+    const hadleBtnFinalizar = () => { success("Compra finalizada!") }
 
     return (
         <>
@@ -26,7 +30,7 @@ const CartWidget = ({ modalCart, handleModalCart, children }) => {
                                 <strong>${item.precio.toLocaleString("es-AR")}</strong>
                             </div>
                             <div className="contador-carrito">
-                                <button onClick={()=>handleRestarCart(item)}>-</button>
+                                <button onClick={() => handleRestarCart(item)}>-</button>
                                 <span>{item.cantidad}</span>
                                 <button onClick={() => handleSumarCart(item)}>+</button>
                             </div>
@@ -38,7 +42,7 @@ const CartWidget = ({ modalCart, handleModalCart, children }) => {
                 }
                 {
                     carrito.length > 0 &&
-                    <div className="btn-finalizar">
+                    <div className="btn-finalizar" onClick={hadleBtnFinalizar}>
                         <strong>Subtotal: ${carrito.reduce((acum, item) => acum + (item.precio * item.cantidad), 0).toLocaleString("es-AR")}</strong>
                         {children}
                     </div>
